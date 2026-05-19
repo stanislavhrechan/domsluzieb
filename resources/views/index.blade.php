@@ -1,0 +1,10 @@
+@extends('layouts.app')
+@section('content')
+   <x-home-section.hero/>
+   <x-home-section.benefits/>
+   <x-home-section.about-dom-s-luzieb/>
+   <x-home-section.type-of-works/>
+   <x-home-section.privilegious/>
+   <x-home-section.kontakt/>
+   <x-home-section.footer/>
+@endsection
