@@ -12,6 +12,7 @@ class Apartment extends Model
         'apartment_number',
         'rooms',
         'area',
+        'coords',
         'status',
     ];
 

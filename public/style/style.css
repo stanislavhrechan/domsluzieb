@@ -28,7 +28,6 @@ body, html {
   fill:#2ecc71;
 }
 
-
-.zone.sold:hover{
+.zone.occupied:hover{
   fill:#801313;
 }

@@ -2,278 +2,289 @@
 @section('content')
 <div class="relative w-full min-h-screen bg-white overflow-hidden">
 
-    {{-- Blueprint background --}}
     <div class="absolute inset-0 opacity-[0.08] pointer-events-none
         bg-[linear-gradient(#000_1px,transparent_1px),linear-gradient(90deg,#000_1px,transparent_1px)]
         bg-[size:40px_40px]">
     </div>
 
-    {{-- Top HUD --}}
     <div class="absolute bottom-0 left-0 right-0 z-20 px-6 py-4 flex justify-between items-center text-white">
-        <div class="text-sm uppercase tracking-widest text-black/60 font-[DMMono]">
+        <div class="hidden md:block text-sm uppercase tracking-widest text-black/60 font-[DMMono]">
             ARCHITEKTÚRNY POHĽAD
         </div>
 
-        <div class="text-black font-[DMMono] uppercase text-sm">
+        <div class="text-black font-[DMMono] uppercase text-xs md:text-sm">
            Budova: {{$floorModel->building->name}} / Poshodie: {{ $floorModel->floor_number}}
         </div>
         
     </div>
 
-    {{-- Main SVG container --}}
-    <div class="relative w-full h-full overflow-hidden">
-    
+    <div class="relative w-full h-screen overflow-hidden touch-none">
         <div id="viewport"
-            class="absolute inset-0 cursor-grab active:cursor-grabbing">
-
+            class="absolute inset-0 flex items-center justify-center overflow-hidden
+            cursor-grab active:cursor-grabbing touch-none">
             <div id="floor-wrapper"
                 class="relative w-fit mx-auto transition-transform duration-300 ease-out scale-[0.78]">
 
                 @includeIf('components.floor-svg.' . $floorView)
-
             </div>
-
-
         </div>
-
     </div>
 
-    {{-- Floating tooltip (HUD style) --}}
     <div id="apartment-panel"
-        class="fixed top-1/2 right-0 -translate-y-1/2
+        class="fixed bottom-20 translate-y-1/2 right-1/2 translate-x-1/2 
         hidden z-50 w-[320px]
-        bg-white/10 backdrop-blur-2xl border border-white/20
+        bg-[#333333]
         text-white p-6 shadow-2xl">
 
-        <div class="flex justify-between items-start mb-4">
+        <div class="flex flex-col gap-2 w-full">
+            <div class="flex items-center justify-between w-full">
 
-            <div>
-                <h3 id="panel-name" class="text-xl font-semibold"></h3>
-                <p id="panel-area" class="text-sm text-white/60"></p>
+                <h3 id="panel-name"
+                    class="text-xl font-semibold leading-tight truncate max-w-[70%]">
+                </h3>
+
+                <span class="flex items-center gap-2 text-xs uppercase tracking-wider text-white/60">
+                    STAV:
+                    <div id="panel-status"
+                        class="text-sm font-semibold mb-0.5">
+                    </div>
+                </span>
+
             </div>
 
-            <button id="panel-close"
-                    class="text-white/60 hover:text-white text-lg">
-                ✕
-            </button>
+            <div class="flex items-center justify-between">
+
+                <p id="panel-area"
+                class="text-sm text-white/60">
+                </p>
+
+            </div>
 
         </div>
-
-        <div id="panel-status" class="text-sm mb-4"></div>
+        <p class="text-white text-xs  mt-1">Pre viac informácií nás prosím kontaktujte.</p>
+        <p class="text-white text-xs font-semibold">Mária Stesňáková | 0919 391 361</p>
     </div>
 
 
 </div>
+
+<style>
+    
+</style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
     const viewport = document.getElementById('viewport');
     const wrapper = document.getElementById('floor-wrapper');
-
-    const zones = document.querySelectorAll('.zone');
-
-    // MINI MAP
-    const minimap = document.getElementById('minimap');
-    const viewportBox = document.getElementById('viewport-box');
-
-    let scale = 0.78;
-    let posX = 0;
-    let posY = 0;
-
-    let isDragging = false;
-    let startX, startY;
-
-    // ------------------------
-    // PAN (drag move)
-    // ------------------------
-    viewport.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        startX = e.clientX - posX;
-        startY = e.clientY - posY;
-    });
-
-    window.addEventListener('mouseup', () => {
-        isDragging = false;
-    });
-
-    window.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-
-        posX = e.clientX - startX;
-        posY = e.clientY - startY;
-
-        applyTransform();
-    });
-
-    // ------------------------
-    // ZOOM
-    // ------------------------
-    viewport.addEventListener('wheel', (e) => {
-
-        e.preventDefault();
-
-        const zoomIntensity = 0.1;
-
-        if (e.deltaY < 0) {
-            scale += zoomIntensity;
-        } else {
-            scale -= zoomIntensity;
-        }
-
-        scale = Math.min(Math.max(0.5, scale), 2);
-
-        applyTransform();
-    });
-
-    function applyTransform() {
-        wrapper.style.transform =
-            `translate(${posX}px, ${posY}px) scale(${scale})`;
-
-        updateMinimap();
-    }
-
-    // ------------------------
-    // FOCUS MODE (click apartment)
-    // ------------------------
-    zones.forEach(zone => {
-
-        zone.addEventListener('click', (e) => {
-
-            e.stopPropagation();
-
-            const rect = zone.getBoundingClientRect();
-
-            const centerX = window.innerWidth / 2;
-            const centerY = window.innerHeight / 2;
-
-            const zoneRect = zone.getBoundingClientRect();
-
-            const offsetX = centerX - (zoneRect.left + zoneRect.width / 2);
-            const offsetY = centerY - (zoneRect.top + zoneRect.height / 2);
-
-            posX += offsetX;
-            posY += offsetY;
-
-            // zoom in focus
-            scale = 1.3;
-
-            applyTransform();
-
-            // highlight selected
-            zones.forEach(z => {
-                z.style.opacity = (z === zone) ? '1' : '0.2';
-                z.style.transition = '0.3s';
-            });
-
-            setTimeout(() => {
-                zones.forEach(z => z.style.opacity = '1');
-            }, 2000);
-
-            const url = zone.dataset.url;
-            if (url) {
-                // optional: delay navigation
-                // setTimeout(() => window.location.href = url, 300);
-            }
-        });
-
-    });
-
-    // ------------------------
-    // MINIMAP
-    // ------------------------
-    function updateMinimap() {
-
-        const scaleFactor = 0.2;
-
-        viewportBox.style.width = (window.innerWidth * scaleFactor / scale) + 'px';
-        viewportBox.style.height = (window.innerHeight * scaleFactor / scale) + 'px';
-
-        viewportBox.style.transform =
-            `translate(${(-posX * scaleFactor / scale)}px, ${(-posY * scaleFactor / scale)}px)`;
-    }
-
-    // init
-    applyTransform();
-
-});
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-
     const zones = document.querySelectorAll('.zone');
 
     const panel = document.getElementById('apartment-panel');
-    const closeBtn = document.getElementById('panel-close');
-    const openBtn = document.getElementById('panel-open');
 
     const nameEl = document.getElementById('panel-name');
     const areaEl = document.getElementById('panel-area');
     const statusEl = document.getElementById('panel-status');
+
+    // -------------------------
+    // STATE
+    // -------------------------
+
+    let scale = 0.78;
+
+    let posX = 0;
+    let posY = 0;
+
+    let isDragging = false;
+
+    let startX = 0;
+    let startY = 0;
+
+    let dragDistance = 0;
+
+    // -------------------------
+    // STATUS MAP
+    // -------------------------
 
     const statusMap = {
         free: {
             text: "Voľný",
             class: "text-green-300"
         },
+
         occupied: {
             text: "Predaný",
             class: "text-red-400"
         },
+
         reserved: {
             text: "Rezervovaný",
             class: "text-yellow-300"
         }
     };
 
-    let currentUrl = null;
+    // -------------------------
+    // RENDER
+    // -------------------------
+
+    function render() {
+
+        wrapper.style.transform =
+            `translate(${posX}px, ${posY}px) scale(${scale})`;
+
+    }
+
+    render();
+
+    // -------------------------
+    // POINTER EVENTS
+    // -------------------------
+
+    viewport.addEventListener('pointerdown', (e) => {
+
+        isDragging = true;
+
+        dragDistance = 0;
+
+        startX = e.clientX - posX;
+        startY = e.clientY - posY;
+
+        viewport.style.cursor = 'grabbing';
+
+    });
+
+    window.addEventListener('pointermove', (e) => {
+
+        if (!isDragging) return;
+
+        const nextX = e.clientX - startX;
+        const nextY = e.clientY - startY;
+
+        dragDistance += Math.abs(nextX - posX);
+        dragDistance += Math.abs(nextY - posY);
+
+        posX = nextX;
+        posY = nextY;
+
+        render();
+
+    });
+
+    window.addEventListener('pointerup', () => {
+
+        isDragging = false;
+
+        viewport.style.cursor = 'grab';
+
+    });
+
+    // -------------------------
+    // ZOOM
+    // -------------------------
+
+    viewport.addEventListener('wheel', (e) => {
+
+        e.preventDefault();
+
+        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+
+        scale += delta;
+
+        scale = Math.max(0.5, Math.min(scale, 2));
+
+        render();
+
+    }, { passive: false });
+
+    // -------------------------
+    // APARTMENTS
+    // -------------------------
 
     zones.forEach(zone => {
 
         zone.addEventListener('click', (e) => {
+
             e.stopPropagation();
+
+            // ignore click after drag
+            if (dragDistance > 8) return;
+
+            const rect = zone.getBoundingClientRect();
+
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+
+            const zoneCenterX = rect.left + rect.width / 2;
+            const zoneCenterY = rect.top + rect.height / 2;
+
+            posX += centerX - zoneCenterX;
+            posY += centerY - zoneCenterY;
+
+            scale = 1.2;
+
+            render();
+
+            // -------------------------
+            // PANEL
+            // -------------------------
 
             const name = zone.dataset.name;
             const area = zone.dataset.area;
             const status = zone.dataset.status;
-            const url = zone.dataset.url;
-
-            currentUrl = url;
 
             const s = statusMap[status] || statusMap.free;
 
             nameEl.textContent = name;
-            areaEl.textContent = area ? `${area} m²` : '';
+
+            areaEl.textContent =
+                area ? `${area} m²` : '';
 
             statusEl.innerHTML = `
-                <span class="${s.class} uppercase tracking-wider">
+                <span class="${s.class}">
                     ${s.text}
                 </span>
             `;
 
             panel.classList.remove('hidden');
+
+            // -------------------------
+            // HIGHLIGHT
+            // -------------------------
+
+            zones.forEach(z => {
+
+                z.style.opacity =
+                    z === zone ? '1' : '0.2';
+
+            });
+
+            setTimeout(() => {
+
+                zones.forEach(z => {
+                    z.style.opacity = '1';
+                });
+
+            }, 1500);
+
         });
 
     });
 
-    // close panel
-    closeBtn.addEventListener('click', () => {
-        panel.classList.add('hidden');
-    });
+    // -------------------------
+    // CLOSE PANEL
+    // -------------------------
 
-    // open apartment page
-    openBtn.addEventListener('click', () => {
-        if (currentUrl) {
-            window.location.href = currentUrl;
-        }
-    });
-
-    // click outside closes panel
     window.addEventListener('click', (e) => {
-        if (!panel.contains(e.target)) {
+
+        if (
+            !panel.contains(e.target) &&
+            !e.target.closest('.zone')
+        ) {
+
             panel.classList.add('hidden');
+
         }
+
     });
 
 });
+
 </script>

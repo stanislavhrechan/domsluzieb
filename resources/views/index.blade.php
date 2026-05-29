@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-   <x-home-section.hero/>
+   <x-home-section.hero :buildings="$buildings"/>
    <x-home-section.benefits/>
    <x-home-section.about-dom-s-luzieb/>
    <x-home-section.type-of-works/>

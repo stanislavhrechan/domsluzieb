@@ -38,16 +38,27 @@ class DomSluziebController extends Controller
         $request->validate([
             'floor_id' => 'required|exists:floors,id',
             'apartment_number' => 'required',
-            'rooms' => 'nullable|integer',
             'area' => 'nullable|numeric',
+            'coords' => 'nullable|string',
             'status' => 'required',
         ]);
 
         Apartment::create([
             'floor_id' => $request->floor_id,
             'apartment_number' => $request->apartment_number,
-            'rooms' => $request->rooms,
             'area' => $request->area,
+            'coords' => $request->coords,
+            'status' => $request->status,
+        ]);
+
+        return back();
+    }
+
+    public function updateApartment(Request $request,  Apartment $apartment) {
+        $apartment->update([
+            'apartment_number' => $request->apartment_number,
+            'area' => $request->area,
+            'coords' => $request->coords,
             'status' => $request->status,
         ]);
 

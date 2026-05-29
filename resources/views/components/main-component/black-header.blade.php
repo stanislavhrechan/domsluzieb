@@ -29,11 +29,11 @@
     >
 
         <a
-            href="#"
+            href="/"
             :class="scrolled ? 'text-black' : 'text-black'"
             class="uppercase px-5 py-2 text-xs transition"
         >
-            O NAS
+            Dom služieb
         </a>
 
         <a
@@ -41,7 +41,7 @@
             :class="scrolled ? 'text-black' : 'text-black'"
             class="uppercase px-5 py-2 text-xs transition"
         >
-            GALLERY
+            Galéria
         </a>
 
         <button
@@ -53,11 +53,9 @@
 
     </div>
 
-    <!-- MOBILE BURGER -->
     <button
         @click="isMenuOpen = true"
-        class="md:hidden absolute top-5 right-5 z-50 transition"
-        :class="scrolled ? 'text-black' : 'text-white'"
+        class="md:hidden absolute top-5 right-5 z-50 transition text-black"
     >
 
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -105,17 +103,17 @@
         <div class="flex flex-col">
 
             <a
-                href="#"
+                href="/"
                 class="px-5 py-4 border-b border-neutral-700 uppercase text-sm hover:bg-neutral-800 transition"
             >
-                O NAS
+                Dom služieb
             </a>
 
             <a
                 href="{{ route('gallery') }}"
                 class="px-5 py-4 border-b border-neutral-700 uppercase text-sm hover:bg-neutral-800 transition"
             >
-                GALLERY
+                Galéria
             </a>
 
             <button
@@ -206,7 +204,8 @@
             <!-- FORM -->
             <div class="mb-10">
 
-                <form class="space-y-5">
+                <form method="POST" action="{{ route('contact.send') }}"  class="space-y-5">
+                    @csrf
 
                     <input
                         type="text"
@@ -252,11 +251,11 @@
             <div class="flex flex-col md:flex-row gap-3 md:gap-5 text-xs text-neutral-300">
 
                 <p class="font-[DMMono]">
-                    example@email.com
+                    stesnakova.maria@gmail.com
                 </p>
 
                 <p class="font-[DMMono]">
-                    +421999999999
+                    +42191991361
                 </p>
 
                 <p class="font-[DMMono]">

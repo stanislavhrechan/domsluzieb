@@ -29,11 +29,11 @@
     >
 
         <a
-            href="#"
+            href="/"
             :class="scrolled ? 'text-black' : 'text-white'"
             class="uppercase px-5 py-2 text-xs transition"
         >
-            O NAS
+            Dom služieb
         </a>
 
         <a
@@ -41,7 +41,7 @@
             :class="scrolled ? 'text-black' : 'text-white'"
             class="uppercase px-5 py-2 text-xs transition"
         >
-            GALLERY
+            Galéria
         </a>
 
         <button
@@ -108,14 +108,14 @@
                 href="#"
                 class="px-5 py-4 border-b border-neutral-700 uppercase text-sm hover:bg-neutral-800 transition"
             >
-                O NAS
+                Dom služieb
             </a>
 
             <a
                 href="{{ route('gallery') }}"
                 class="px-5 py-4 border-b border-neutral-700 uppercase text-sm hover:bg-neutral-800 transition"
             >
-                GALLERY
+                Galéria
             </a>
 
             <button
@@ -132,7 +132,6 @@
 
     </div>
 
-    <!-- CONTACT BACKDROP -->
     <div
         x-cloak
         x-show="isContactOpen"
@@ -141,7 +140,6 @@
         class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
     ></div>
 
-    <!-- CONTACT SIDEBAR -->
     <div
         x-cloak
         x-show="isContactOpen"
@@ -206,28 +204,32 @@
             <!-- FORM -->
             <div class="mb-10">
 
-                <form class="space-y-5">
-
+                <form method="POST" action="{{ route('contact.send') }}"  class="space-y-5">
+                    @csrf
                     <input
                         type="text"
+                        name="name"
                         placeholder="Meno"
                         class="w-full bg-transparent border border-neutral-600 p-3 text-sm outline-none focus:border-white transition"
                     >
 
                     <input
                         type="email"
+                        name="email"
                         placeholder="Email"
                         class="w-full bg-transparent border border-neutral-600 p-3 text-sm outline-none focus:border-white transition"
                     >
 
                     <input
                         type="tel"
+                        name="tel"
                         placeholder="Telefónne číslo"
                         class="w-full bg-transparent border border-neutral-600 p-3 text-sm outline-none focus:border-white transition"
                     >
 
                     <textarea
                         placeholder="Správa"
+                        name="message"
                         rows="5"
                         class="w-full bg-transparent border border-neutral-600 p-3 text-sm outline-none resize-none focus:border-white transition"
                     ></textarea>
@@ -243,12 +245,10 @@
 
             </div>
 
-            <!-- PRIVACY -->
             <p class="text-xs mb-8 text-neutral-400">
                 Potvrdzujete, že vaše údaje uvedené vo formulári budú spracované našou webovou stránkou.
             </p>
 
-            <!-- CONTACT INFO -->
             <div class="flex flex-col md:flex-row gap-3 md:gap-5 text-xs text-neutral-300">
 
                 <p class="font-[DMMono]">

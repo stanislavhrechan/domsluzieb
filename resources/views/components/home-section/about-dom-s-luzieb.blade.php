@@ -1,22 +1,31 @@
-<section class="relative h-[80vh]">
-    
-    <img src="./images/DomSluzieb.jpg" 
-         class="absolute inset-0 w-full h-full object-cover">
+<section class="cinematic-hero relative h-[100vh] overflow-hidden">
+    <img
+        src="./images/DomSluzieb.jpg"
+        class="hero-bg absolute inset-0 w-full h-full object-cover scale-110"
+    />
 
-    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
 
-    <div class="relative z-10 px-20 py-32 text-white max-w-3xl">
-        <span class="text-sm uppercase text-white/70">
-            O Dom Služieb
-        </span>
+    <div class="relative z-10 h-full flex items-center px-5 md:px-20">
 
-        <h2 class="mt-6 text-4xl leading-tight">
-            Priestor, kde podnikanie dáva zmysel.
-        </h2>
+        <div class="">
 
-        <p class="mt-6 text-white/80">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum officiis et beatae aliquid non aperiam sequi reiciendis voluptates eaque ratione. Sint enim odit at dolores! Distinctio molestias expedita facilis illum?
-        </p>
+            <span class="hero-kicker block text-sm uppercase tracking-[0.3em] text-white/60">
+                O Dom Služieb
+            </span>
+
+            <h1 class="hero-title mt-6 text-5xl md:text-7xl  leading-[0.92] font-light text-white">
+                Priestor, kde podnikanie<br>
+                dáva zmysel.
+            </h1>
+
+            <p class="hero-text mt-6 text-white/70 max-w-xl leading-relaxed">
+                Moderný priestor pre služby, podnikanie a komunitu.
+                Miesto, kde sa architektúra stretáva s funkciou.
+            </p>
+
+        </div>
+
     </div>
-
 </section>
+

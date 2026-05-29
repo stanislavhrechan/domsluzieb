@@ -7,9 +7,7 @@ use App\Http\Controllers\Admin\{AuthController, DomSluziebController};
 //heslo:DomSluziebJeSuper1_3_2026
 
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [DomSluziebUserController::class, 'index']);
 
 Route::get('/gallery', function () {
     return view('gallery');
@@ -18,6 +16,8 @@ Route::get('/gallery', function () {
 Route::get('/terms', function () {
     return view('info.terms');
 });
+
+Route::post('/contact', [DomSluziebUserController::class, 'contact_send'])->name('contact.send');
 
 Route::get('/floor/{floor}', [DomSluziebUserController::class, 'showFloor']);
 
@@ -40,4 +40,7 @@ Route::middleware('auth')->group(function(){
 
     Route::post('/admin/apartment/store', [DomSluziebController::class, 'storeApartment'])
     ->name('admin.apartment.store');
+
+    Route::put('/admin/apartment/{apartment}', [DomSluziebController::class, 'updateApartment'])
+    ->name('admin.apartment.update');
 });

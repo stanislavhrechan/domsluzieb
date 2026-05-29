@@ -1,70 +1,88 @@
-<footer class="bg-[#111111] text-white relative overflow-hidden min-h-[80vh]">
-   <div class="absolute top-5 left-20">
-        <img src="{{ asset('images/logo.svg') }}" alt="" class="w-25"/>
-        <span class="uppercase font-[DMMono] text-xs text-white/50">
-          © 2026 Dom Sluzieb. All rights reserved.
-        </span>
-    </div>
-  <div class="absolute bottom-0 left-0 flex items-end gap-6 px-6">
+<footer class="bg-[#111111] text-white relative overflow-hidden md:min-h-[80vh]">
+
+  <!-- LOGO -->
+  <div class="hidden md:block absolute top-5 left-5 md:left-20 z-20">
+      <img src="{{ asset('images/logo.svg') }}" alt="" class="w-20 md:w-25"/>
+
+      <span class="block mt-2 uppercase font-[DMMono] text-xs text-white/50">
+        © 2026 Dom Sluzieb. All rights reserved.
+      </span>
+  </div>
+
+  <!-- LEFT DECORATION (HIDDEN ON MOBILE) -->
+  <div class="hidden md:flex absolute bottom-0 left-0 items-end gap-6 px-6">
     
-    <div class="footer-bar w-20 h-82 bg-white/40 relative">
-      <div class="absolute left-5 right-0 bottom-0 top-5 opacity-30 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]"></div>
+    <div class="footer-bar w-20 h-82 bg-white/40 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]"></div>
     </div>
 
-    <div class="footer-bar w-28 h-124 bg-white/50 relative">
-      <div class="absolute left-2 right-0 bottom-0 top-5 opacity-30 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]"></div>
+    <div class="footer-bar w-28 h-124 bg-white/50 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]"></div>
     </div>
 
-    <div class="footer-bar w-24 h-68 bg-white/35 relative">
-      <div class="absolute left-0 right-3 bottom-0 top-5 opacity-30 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]"></div>
+    <div class="footer-bar w-24 h-68 bg-white/35 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]"></div>
     </div>
 
   </div>
 
-  <div class="absolute bottom-0 right-0 z-10 max-w-4xl w-full l ml-auto px-8 mt-15 py-16 bg-white/95 backdrop-blur-md">
+  <!-- MAIN PANEL -->
+  <div class="relative md:absolute md:bottom-0 md:right-0 z-10 w-full md:max-w-4xl ml-auto px-6 md:px-8 py-12 md:py-16 bg-white/95 backdrop-blur-md">
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-black">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-black">
 
+      <!-- COLUMN 1 -->
       <div>
-        <h4 class="text-xs font-[DMMono]  uppercase tracking-wider mb-4 text-black/60">
-          Building
+        <h4 class="text-xs font-[DMMono] uppercase tracking-wider mb-4 text-black/60">
+          Dom Služieb
         </h4>
+
         <ul class="space-y-3 text-sm">
-          <li><a href="#" class="hover:text-black transition">Budova A</a></li>
-          <li><a href="#" class="hover:text-black transition">Budova B</a></li>
-          <li><a href="#" class="hover:text-black transition">Documentation</a></li>
+          <li>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Dafofo%203146%2C%20064%2001%20Stará%20Ľubovňa"
+              target="_blank"
+              class="hover:text-black transition"
+            >
+              Lokácia
+            </a>
+          </li>
         </ul>
       </div>
 
+      <!-- COLUMN 2 -->
       <div>
-        <h4 class="text-xs font-[DMMono]  uppercase tracking-wider mb-4 text-black/60">
+        <h4 class="text-xs font-[DMMono] uppercase tracking-wider mb-4 text-black/60">
           Support
         </h4>
+
         <ul class="space-y-3 text-sm">
-          <li><a href="#" class="hover:text-black transition">Help Center</a></li>
-          <li><a href="#" class="hover:text-black transition">Contact</a></li>
+          <li><a href="#" class="hover:text-black transition">Kontakt</a></li>
           <li><a href="#" class="hover:text-black transition">FAQ</a></li>
         </ul>
       </div>
 
-
+      <!-- COLUMN 3 -->
       <div>
-        <h4 class="text-xs font-[DMMono]  uppercase tracking-wider mb-4 text-black/60">
+        <h4 class="text-xs font-[DMMono] uppercase tracking-wider mb-4 text-black/60">
           Company
         </h4>
+
         <ul class="space-y-3 text-sm">
           <li><a href="#" class="hover:text-black transition">Privacy</a></li>
-          <li><a href="#" class="hover:text-black transition">Terms</a></li>
-          <li><a href="#" class="hover:text-black transition">Cookies</a></li>
+          <li><a href="/terms" class="hover:text-black transition">Terms</a></li>
         </ul>
       </div>
 
     </div>
 
-    <div class="mt-16 border-t border-black/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-      <span class="uppercase font-[DMMono] text-xs text-black/50">
-          Site By Dionis
-        </span>
+    <!-- BOTTOM -->
+    <div class="mt-12 md:mt-16 border-t border-black/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+
+      <span class="uppercase font-[DMMono] text-xs text-black/50 text-center md:text-left">
+        Site By Dionis
+      </span>
+
     </div>
 
   </div>

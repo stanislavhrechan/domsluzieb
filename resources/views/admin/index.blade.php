@@ -3,18 +3,12 @@
 <div class="p-4 md:p-8">
     <div class="flex md:flex-row flex-col gap-3 md:gap-0 md:items-center justify-between mb-8">
         <div>
-            <h1 class="text-white text-2xl font-semibold">Budova</h1>
+            <h1 class="text-white text-2xl font-semibold">Budovy Dom Sluzeib</h1>
             <p class="text-white/40 text-sm">
                 Ovládať každé poschodie s rôznymi informáciami o ňom
             </p>
         </div>
-
-        <button onclick="openFloorModal()"
-            class="px-4 py-2 bg-white text-black text-sm font-medium hover:bg-white/90 cursor-pointer">
-            + Nova budova
-        </button>
     </div>
-
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
         @foreach($builds as $build)
