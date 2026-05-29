@@ -23,7 +23,14 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#E2E2E2]/25 relative">
+<body class="bg-[#E2E2E2]/25 relative"
+x-data="{
+    isMenuOpen: false,
+    isContactOpen: false,
+    scrolled: false
+}"
+>
+
     <x-main-component.header/>
     <main>
         @yield('content')

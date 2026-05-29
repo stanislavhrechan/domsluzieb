@@ -29,7 +29,7 @@
     >
 
         <a
-            href="/"
+            href="{{ route('home') }}"
             :class="scrolled ? 'text-black' : 'text-black'"
             class="uppercase px-5 py-2 text-xs transition"
         >
@@ -103,7 +103,7 @@
         <div class="flex flex-col">
 
             <a
-                href="/"
+                href="{{ route('home') }}"
                 class="px-5 py-4 border-b border-neutral-700 uppercase text-sm hover:bg-neutral-800 transition"
             >
                 Dom služieb

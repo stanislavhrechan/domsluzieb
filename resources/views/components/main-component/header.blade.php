@@ -5,11 +5,7 @@
 </style>
 
 <header
-    x-data="{
-        isMenuOpen: false,
-        isContactOpen: false,
-        scrolled: false
-    }"
+    
     @scroll.window="scrolled = window.scrollY > 50"
     :class="scrolled ? 'bg-white h-18' : 'bg-transparent'"
     class="fixed top-0 left-0 w-full z-[9999] transition-all duration-500"
@@ -29,7 +25,7 @@
     >
 
         <a
-            href="/"
+            href="{{ route('home') }}"
             :class="scrolled ? 'text-black' : 'text-white'"
             class="uppercase px-5 py-2 text-xs transition"
         >
@@ -105,7 +101,7 @@
         <div class="flex flex-col">
 
             <a
-                href="#"
+                href="{{ route('home') }}"
                 class="px-5 py-4 border-b border-neutral-700 uppercase text-sm hover:bg-neutral-800 transition"
             >
                 Dom služieb

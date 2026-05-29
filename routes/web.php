@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\{AuthController, DomSluziebController};
 //heslo:DomSluziebJeSuper1_3_2026
 
 
-Route::get('/', [DomSluziebUserController::class, 'index']);
+Route::get('/', [DomSluziebUserController::class, 'index'])->name('home');
 
 Route::get('/gallery', function () {
     return view('gallery');
