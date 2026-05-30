@@ -11,7 +11,7 @@
 
     <button
     @click="isContactOpen = true"
-        class="inline-block bg-black text-white px-8 py-4 text-sm uppercase tracking-wider hover:bg-gray-800 transition">
+        class="inline-block bg-black text-white px-8 py-4 text-sm uppercase tracking-wider hover:bg-gray-800 transition cursor-pointer">
         Kontaktujte nás
     </button>
 

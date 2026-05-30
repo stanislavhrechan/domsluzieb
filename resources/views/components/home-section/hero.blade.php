@@ -10,41 +10,28 @@
             <path d="M1400 577H616.5H229V445.5L246 443.5V431H616.5H1400V577Z" data-name="A" data-floor="B" data-area="12 miestnosti" data-status="free" data-url="/floor/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d9d9d944" fill-opacity="0.23"/>
         </svg>
 
-        <svg id="heroMobileA" class="hero-svg active block md:hidden  min-h-full" viewBox="0 0 727 1300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <image 
-            href="./images/domsluzieb_bg_mobile.jpg"
+        <svg id="heroMobileA" class="hero-svg active block md:hidden  min-h-full" viewBox="0 0 1025 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+             <image 
+            href="./images/bg_mobile_1.png"
             class="animate-heroReveal"
             />
-            <path d="M161.5 609.5H0.5V835.5H161.5H758V620.5H161.5V609.5Z" data-name="A" data-floor="B" data-area="12 miestnosti" data-status="free" data-url="/floor/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
-            <path d="M757.25 836.5H0.25V999.545H152.649V1047.5H757.25V836.5Z" data-name="A" data-floor="A" data-area="6 miestnosti" data-status="free" data-url="/floor/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
-           
+            <path d="M1020.75 924H0.75V1019.13H335.078V1053H754.989V944.421H1020.75V924Z" data-name="A" data-floor="B" data-area="12 miestnosti" data-status="free" data-url="/floor/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
+            <path d="M333.163 786.5H0V904.558H333.163V923.5H1022V815.574H333.163V786.5Z" data-name="A" data-floor="A" data-area="6 miestnosti" data-status="free" data-url="/floor/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
         </svg>
 
-       
-
-
-
-
-
-
-        <svg id="heroMobileB" class="hero-svg  block md:hidden min-h-full" viewBox="0 0 758 1465" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg id="heroMobileB" class="hero-svg  block md:hidden min-h-full" viewBox="0 0 1024 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
-            href="./images/domsluzeib_bg_mobile_2.png"
-            class="animate-heroReveal"
-            
+            href="./images/bg_mobile_2.png"
+            class="animate-heroReveal object-center"
             />
-            <path d="M757 769H0.5V570H757V769Z" data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/3" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"  fill="#D9D9D9" fill-opacity="0.23"/>
-           
+            <path d="M1 915V889H13.0061L35.5176 819H209.106L240.622 790L269.137 817H835.426L958.489 844.5H981V869.5H968.994V915H1Z"  data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/3" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
         </svg>
-
-
 
 
         <svg id="heroDesktopB" class="hero-svg hidden md:block" preserveAspectRatio="xMidYMid slice" viewBox="0 150 1536 1524" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
             href="./images/bg_2.png"
             class="animate-heroReveal"
-            
             />
             <path data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/3" d="M1504 537.5H18.5V499.5H34.5L60 408H242.5L336.5 403L389.5 356.5L432 397H1294L1489 432.5H1523V471.5H1504V537.5Z" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
         </svg>
