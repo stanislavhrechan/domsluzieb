@@ -16,12 +16,14 @@
 >
 
     <div class="absolute top-3 left-5 md:left-20 z-50">
-        <img
-            src="{{ asset('images/logo.svg') }}"
-            alt="Logo"
-            class="w-12 md:w-16 transition-all duration-500"
-            :class="scrolled ? 'invert-0' : 'invert'"
-        />
+        <a href="{{ route('home') }}">
+            <img
+                src="{{ asset('images/logo.svg') }}"
+                alt="Logo"
+                class="w-12 md:w-16 transition-all duration-500"
+                :class="scrolled ? 'invert-0' : 'invert'"
+            />
+        </a>
     </div>
 
     <div

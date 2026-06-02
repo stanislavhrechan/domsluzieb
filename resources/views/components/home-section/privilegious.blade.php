@@ -105,6 +105,9 @@
             </div>
 
             {{-- ITEM --}}
+            
+
+            {{-- ITEM --}}
             <div class="feature-card group relative bg-[#FAFAFA] p-10 min-h-[220px] flex flex-col justify-between overflow-hidden transition-all duration-500 hover:bg-white hover:-translate-y-[3px]">
 
                 <div class="absolute top-0 left-0 h-[1px] w-0 bg-black/40 transition-all duration-500 group-hover:w-full"></div>
@@ -113,24 +116,6 @@
                     <span class="absolute -top-6 right-0 text-6xl font-light text-black/[0.04]">05</span>
                     <p class="text-xs uppercase tracking-[0.25em] text-neutral-400 font-[DMMono] relative z-10">
                         05
-                    </p>
-                </div>
-
-                <p class="uppercase text-[15px] tracking-wide">
-                    Dostupnosť MHD
-                </p>
-
-            </div>
-
-            {{-- ITEM --}}
-            <div class="feature-card group relative bg-[#FAFAFA] p-10 min-h-[220px] flex flex-col justify-between overflow-hidden transition-all duration-500 hover:bg-white hover:-translate-y-[3px]">
-
-                <div class="absolute top-0 left-0 h-[1px] w-0 bg-black/40 transition-all duration-500 group-hover:w-full"></div>
-
-                <div class="relative">
-                    <span class="absolute -top-6 right-0 text-6xl font-light text-black/[0.04]">06</span>
-                    <p class="text-xs uppercase tracking-[0.25em] text-neutral-400 font-[DMMono] relative z-10">
-                        06
                     </p>
                 </div>
 

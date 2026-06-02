@@ -40,7 +40,7 @@
         <ul class="space-y-3 text-sm">
           <li>
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Dafofo%203146%2C%20064%2001%20Stará%20Ľubovňa"
+              href="https://maps.app.goo.gl/5Qehe8tvzzbehcgb7"
               target="_blank"
               class="hover:text-black transition"
             >
@@ -57,8 +57,13 @@
         </h4>
 
         <ul class="space-y-3 text-sm">
-          <li><a href="#" class="hover:text-black transition">Kontakt</a></li>
-          <li><a href="#" class="hover:text-black transition">FAQ</a></li>
+          <li>
+            <button
+                @click="isContactOpen = true"
+                class="hover:text-black transition cursor-pointer">
+                Kontakt
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -69,7 +74,7 @@
         </h4>
 
         <ul class="space-y-3 text-sm">
-          <li><a href="#" class="hover:text-black transition">Privacy</a></li>
+          <li><a href="/privacy" class="hover:text-black transition">Privacy</a></li>
           <li><a href="/terms" class="hover:text-black transition">Terms</a></li>
         </ul>
       </div>

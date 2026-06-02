@@ -17,27 +17,27 @@ class DomSluziebUserController extends Controller
         return view('index', compact('buildings'));
     }
 
-    public function showFloor($floor)
+    public function showFloor($building, $floor)
     {
+        $allowedBuildings = ['1', '2'];
         $allowedFloors = ['1', '2', '3'];
+
+        if (!in_array($building, $allowedBuildings)) {
+            abort(404);
+        }
 
         if (!in_array($floor, $allowedFloors)) {
             abort(404);
         }
 
         $floorModel = Floor::with('building')
+            ->where('building_id', $building)
             ->where('floor_number', $floor)
             ->firstOrFail();
 
-        $floorMap = [
-            '1' => 'A',
-            '2' => 'A',
-            '3' => 'B',
-        ];
+        $buildingLetter = $building == 1 ? 'A' : 'B';
 
-        $prefix = $floorMap[$floor] ?? 'A';
-
-        $floorView = $prefix . '_floor_' . $floor;
+        $floorView = $buildingLetter . '_floor_' . $floor;
 
         return view('podlazie', compact('floorView', 'floorModel'));
     }

@@ -13,13 +13,17 @@ Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
 
+Route::get('/privacy', function () {
+    return view('info.privacy');
+});
+
 Route::get('/terms', function () {
     return view('info.terms');
 });
 
 Route::post('/contact', [DomSluziebUserController::class, 'contact_send'])->name('contact.send');
 
-Route::get('/floor/{floor}', [DomSluziebUserController::class, 'showFloor']);
+Route::get('/floor/{building}/{floor}', [DomSluziebUserController::class, 'showFloor']);
 
 Route::get('/admin/login', [AuthController::class, 'showLogin'])->name('admin.login')->middleware('guest');
 

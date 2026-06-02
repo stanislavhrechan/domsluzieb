@@ -6,8 +6,9 @@
             href="./images/bg_1.png"
             class="animate-heroReveal"
             />
-            <path d="M229 694.5V577.5H615H1401.5V607.5H1101.5V730H615V694.5H229Z"  data-name="A" data-floor="A" data-area="6 miestnosti" data-status="free" data-url="/floor/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d9d9d944" fill-opacity="0.23"/>
-            <path d="M1400 577H616.5H229V445.5L246 443.5V431H616.5H1400V577Z" data-name="A" data-floor="B" data-area="12 miestnosti" data-status="free" data-url="/floor/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d9d9d944" fill-opacity="0.23"/>
+            <path d="M617 431V308L1400.5 305.5V431H617Z" data-name="A" data-floor="C" data-area="8 miestnosti" data-status="free" data-url="/floor/1/3"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" data-url="" fill="#D9D9D9" fill-opacity="0.23"/>
+            <path d="M229 694.5V577.5H615H1401.5V607.5H1101.5V730H615V694.5H229Z"  data-name="A" data-floor="A" data-area="7 miestnosti" data-status="free" data-url="/floor/1/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d9d9d944" fill-opacity="0.23"/>
+            <path d="M1400 577H616.5H229V445.5L246 443.5V431H616.5H1400V577Z" data-name="A" data-floor="B" data-area="16 miestnosti" data-status="free" data-url="/floor/1/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d9d9d944" fill-opacity="0.23"/>
         </svg>
 
         <svg id="heroMobileA" class="hero-svg active block md:hidden  min-h-full" viewBox="0 0 1025 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -15,16 +16,18 @@
             href="./images/bg_mobile_1.png"
             class="animate-heroReveal"
             />
-            <path d="M1020.75 924H0.75V1019.13H335.078V1053H754.989V944.421H1020.75V924Z" data-name="A" data-floor="B" data-area="12 miestnosti" data-status="free" data-url="/floor/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
-            <path d="M333.163 786.5H0V904.558H333.163V923.5H1022V815.574H333.163V786.5Z" data-name="A" data-floor="A" data-area="6 miestnosti" data-status="free" data-url="/floor/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
+            <path d="M998 924H0V1019.13H321.5V1053H737.972V944.421H998V924Z" data-name="A" data-floor="A" data-area="7 miestnosti" data-status="free" data-url="/floor/1/1" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d82b2b" fill-opacity="0.23"/>
+            <path d="M321 787H0V923H321.607L998 924V816.074H321V787Z" data-name="A" data-floor="B" data-area="16 miestnosti" data-status="free" data-url="/floor/1/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#09e92e" fill-opacity="0.23"/>
+            <path d="M321 815.5V678L998 676.5V815.5H321Z" data-name="A" data-floor="C" data-area="8 miestnosti" data-status="free" data-url="/floor/1/3"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#2c1d1d" fill-opacity="0.23"/>
         </svg>
+
 
         <svg id="heroMobileB" class="hero-svg  block md:hidden min-h-full" viewBox="0 0 1024 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
             href="./images/bg_mobile_2.png"
             class="animate-heroReveal object-center"
             />
-            <path d="M1 915V889H13.0061L35.5176 819H209.106L240.622 790L269.137 817H835.426L958.489 844.5H981V869.5H968.994V915H1Z"  data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/3" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
+            <path d="M1 915V889H13.0061L35.5176 819H209.106L240.622 790L269.137 817H835.426L958.489 844.5H981V869.5H968.994V915H1Z"  data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/2/2" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
         </svg>
 
 
@@ -33,7 +36,7 @@
             href="./images/bg_2.png"
             class="animate-heroReveal"
             />
-            <path data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/3" d="M1504 537.5H18.5V499.5H34.5L60 408H242.5L336.5 403L389.5 356.5L432 397H1294L1489 432.5H1523V471.5H1504V537.5Z" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
+            <path data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/2/2"  d="M1504 537.5H18.5V499.5H34.5L60 408H242.5L336.5 403L389.5 356.5L432 397H1294L1489 432.5H1523V471.5H1504V537.5Z" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
         </svg>
 
        <div id="apartment-panel"
@@ -94,9 +97,9 @@
                 px-4 py-3
                 text-[11px] md:text-[13px]
 
-                font-[DMMono]"
+                font-[DMMono] uppercase"
         >
-            SK, STARA LUBOVNA
+            SK, Stará Ľubovňa
         </div>
 
         <div
@@ -110,10 +113,9 @@
 
                 font-[DMMono]"
         >
-
             <button
                 id="buildingBtn"
-                class="bg-[#1e1e1e]
+                class="bg-[#d59a42]
                     text-white
 
                     text-[12px] md:text-[13px]
@@ -312,7 +314,17 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.textContent = labels[current];
     }
 
+    // переключение по кнопке
     btn.addEventListener('click', switchBuilding);
+
+    // автоматическое переключение каждые 15 секунд
+    let autoSwitch = setInterval(switchBuilding, 15000);
+
+    // если пользователь нажал кнопку — перезапускаем таймер
+    btn.addEventListener('click', () => {
+        clearInterval(autoSwitch);
+        autoSwitch = setInterval(switchBuilding, 15000);
+    });
 
 });
 </script>
@@ -343,17 +355,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         free: {
             text: "Voľné",
-            class: "text-green-300 uppercase font-[DMMono] text-sm"
+            class: "text-green-300 uppercase font-[DMMono] text-sm hidden"
         },
 
         reserved: {
             text: "Rezervované",
-            class: "text-yellow-300 uppercase font-[DMMono] text-sm"
+            class: "text-yellow-300 uppercase font-[DMMono] text-sm hidden"
         },
 
         sold: {
             text: "Predané",
-            class: "text-red-400 uppercase font-[DMMono] text-sm"
+            class: "text-red-400 uppercase font-[DMMono] text-sm hidden"
         }
     };
 
