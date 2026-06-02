@@ -204,7 +204,7 @@
             </div>
 
             <!-- FORM -->
-            <div class="mb-10">
+            <div class="mb-4">
 
                 <form method="POST" action="{{ route('contact.send') }}"  class="space-y-5">
                     @csrf
@@ -245,12 +245,11 @@
             </div>
 
             <!-- PRIVACY -->
-            <p class="text-xs mb-8 text-neutral-400">
+            <p class="text-sm mb-4 text-neutral-400">
                 Potvrdzujete, že vaše údaje uvedené vo formulári budú spracované našou webovou stránkou.
             </p>
 
-            <!-- CONTACT INFO -->
-            <div class="flex flex-col md:flex-row gap-3 md:gap-5 text-xs text-neutral-300">
+            <div class="flex flex-col gap-3 md:gap-3 text-sm text-neutral-300">
 
                 <p class="font-[DMMono]">
                     stesnakova.maria@gmail.com
@@ -259,13 +258,7 @@
                 <p class="font-[DMMono]">
                     +42191991361
                 </p>
-
-                <p class="font-[DMMono]">
-                    SK, STARA LUBOVNA
-                </p>
-
             </div>
-
         </div>
 
     </div>
