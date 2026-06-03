@@ -54,14 +54,12 @@
 
             <div class="flex items-center justify-between">
 
-                <p id="panel-area"
-                class="text-sm text-white/60">
-                </p>
+                <span class="text-white/60 uppercase text-sm">Rozloha:</span><p id="panel-area" class="text-sm text-white90"></p>
 
             </div>
 
         </div>
-        <p class="text-white text-xs  mt-1">Pre viac informácií nás prosím kontaktujte.</p>
+        <p class="text-white text-sm  mt-4 mb-1">Pre viac informácií nás prosím kontaktujte.</p>
         <p class="text-white text-xs font-semibold">Mária Stesňáková | +421 919 391 361</p> 
         <p class="text-white text-xs font-semibold">Peter Reištetter | +421 918 540 042</p>
     </div>
