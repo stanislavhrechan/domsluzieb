@@ -3,7 +3,7 @@
     <div class="absolute inset-0">
         <svg id="heroDesktopA"  class="hero-svg active hidden md:block" preserveAspectRatio="xMidYMid slice" viewBox="0 150 1536 1524" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
-            href="./images/bg_1.png"
+            href="./images/bg_1.webp"
             class="animate-heroReveal"
             />
             <path d="M617 431V308L1400.5 305.5V431H617Z" data-name="A" data-floor="C" data-area="8 miestnosti" data-status="free" data-url="/floor/1/3"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" data-url="" fill="#D9D9D9" fill-opacity="0.23"/>
@@ -13,7 +13,7 @@
 
         <svg id="heroMobileA" class="hero-svg active block md:hidden  min-h-full" viewBox="0 0 1025 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
              <image 
-            href="./images/bg_mobile_1.png"
+            href="./images/bg_mobile_1.webp"
             class="animate-heroReveal"
             />
             <path d="M998 924H0V1019.13H321.5V1053H737.972V944.421H998V924Z" data-name="A" data-floor="A" data-area="7 miestnosti" data-status="free" data-url="/floor/1/1" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d82b2b" fill-opacity="0.23"/>
@@ -24,8 +24,9 @@
 
         <svg id="heroMobileB" class="hero-svg  block md:hidden min-h-full" viewBox="0 0 1024 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
-            href="./images/bg_mobile_2.png"
+            href="./images/bg_mobile_2.webp"
             class="animate-heroReveal object-center"
+            loading="lazy"
             />
             <path d="M1 915V889H13.0061L35.5176 819H209.106L240.622 790L269.137 817H835.426L958.489 844.5H981V869.5H968.994V915H1Z"  data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/2/2" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
         </svg>
@@ -33,8 +34,9 @@
 
         <svg id="heroDesktopB" class="hero-svg hidden md:block" preserveAspectRatio="xMidYMid slice" viewBox="0 150 1536 1524" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
-            href="./images/bg_2.png"
+            href="./images/bg_2.webp"
             class="animate-heroReveal"
+            loading="lazy"
             />
             <path data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/2/2"  d="M1504 537.5H18.5V499.5H34.5L60 408H242.5L336.5 403L389.5 356.5L432 397H1294L1489 432.5H1523V471.5H1504V537.5Z" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
         </svg>
