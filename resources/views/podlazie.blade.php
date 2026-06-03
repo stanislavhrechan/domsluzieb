@@ -23,7 +23,7 @@
             class="absolute inset-0 flex items-center justify-center overflow-hidden
             cursor-grab active:cursor-grabbing touch-none">
             <div id="floor-wrapper"
-                class="relative w-fit mx-auto transition-transform duration-300 ease-out scale-[0.78]">
+                class="relative w-fit mx-auto transition-transform duration-300 ease-out">
 
                 @includeIf('components.floor-svg.' . $floorView)
             </div>
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // STATE
     // -------------------------
 
-    let scale = 0.78;
+    let scale = window.innerWidth < 768 ? 1 : 0.78;
 
     let posX = 0;
     let posY = 0;
