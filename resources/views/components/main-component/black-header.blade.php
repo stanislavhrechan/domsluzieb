@@ -249,14 +249,21 @@
                 Potvrdzujete, že vaše údaje uvedené vo formulári budú spracované našou webovou stránkou.
             </p>
 
-            <div class="flex flex-col gap-3 md:gap-3 text-sm text-neutral-300">
-
+            <div class="flex flex-col gap-3 md:gap-3 text-sm text-neutral-300 mb-4">
                 <p class="font-[DMMono]">
-                    stesnakova.maria@gmail.com
+                    Mária Stesňáková
                 </p>
-
                 <p class="font-[DMMono]">
-                    +42191991361
+                    stesnakova.maria@gmail.com |  +421919391361
+                </p>
+            </div>
+
+             <div class="flex flex-col gap-3 md:gap-3 text-sm text-neutral-300">
+                <p class="font-[DMMono]">
+                    Peter Reištetter
+                </p>
+                <p class="font-[DMMono]">
+                    info@andosa.sk | +421918540042
                 </p>
             </div>
         </div>

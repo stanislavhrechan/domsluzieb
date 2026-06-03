@@ -62,7 +62,8 @@
 
         </div>
         <p class="text-white text-xs  mt-1">Pre viac informácií nás prosím kontaktujte.</p>
-        <p class="text-white text-xs font-semibold">Mária Stesňáková | 0919 391 361</p>
+        <p class="text-white text-xs font-semibold">Mária Stesňáková | +421 919 391 361</p> 
+        <p class="text-white text-xs font-semibold">Peter Reištetter | +421 918 540 042</p>
     </div>
 
 

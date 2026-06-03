@@ -125,11 +125,11 @@
                     animate-zoomUp opacity-0
                     cursor-pointer
 
-                    w-full md:w-auto
+                    w-full md:w-auto uppercase
                     "
                 style="animation-delay: 0.9s;"
             >
-                POZRIEŤ BUDOVU B
+                POZRIEŤ Dom služieb II
             </button>
 
             <span
@@ -295,8 +295,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let current = 0;
 
     const labels = [
-        'POZRIEŤ BUDOVU B',
-        'POZRIEŤ BUDOVU A'
+        'POZRIEŤ Dom služieb II',
+        'POZRIEŤ Dom služieb I'
     ];
 
     function switchBuilding() {
