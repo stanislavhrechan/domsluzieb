@@ -11,7 +11,7 @@
         scrolled: false
     }"
     @scroll.window="scrolled = window.scrollY > 50"
-    :class="scrolled ? 'bg-transparent' : 'bg-white h-18'"
+    :class="scrolled ? 'bg-white h-18' : 'bg-white h-18'"
     class="fixed top-0 left-0 w-full z-30 transition-all duration-500"
 >
 
@@ -21,7 +21,7 @@
                 src="{{ asset('images/logo.svg') }}"
                 alt="Logo"
                 class="w-12 md:w-16 transition-all duration-500"
-                :class="scrolled ? 'invert-0' : 'invert'"
+                :class="scrolled ? 'invert' : 'invert'"
             />
         </a>
     </div>
