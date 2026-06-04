@@ -74,8 +74,8 @@
         </h4>
 
         <ul class="space-y-3 text-sm">
-          <li><a href="/privacy" class="hover:text-black transition">Privacy</a></li>
-          <li><a href="/terms" class="hover:text-black transition">Terms</a></li>
+          <li><a href="/privacy" class="hover:text-black transition">Ochrana osobných údajov</a></li>
+          <li><a href="/terms" class="hover:text-black transition">Obchodné podmienky</a></li>
         </ul>
       </div>
 

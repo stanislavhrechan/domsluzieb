@@ -1,124 +1,116 @@
 @extends('layouts.info')
 
-@section('title', 'Terms & Conditions')
+@section('title', 'Obchodné podmienky')
 
 @section('content')
 <div class="bg-white">
     <div class="px-5 md:px-20 py-21">
         <div class="mb-16">
             <span class="text-xs tracking-[0.3em] font-[DMMono] uppercase text-neutral-400">
-                Legal
+                Právne informácie
             </span>
 
             <h1 class="mt-4 text-5xl md:text-7xl leading-[0.92] tracking-tight font-light">
-                Terms & Conditions
+                Obchodné podmienky
             </h1>
         </div>
 
         <div class="space-y-12">
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    1. Acceptance of Terms
+                    1. Prijatie podmienok
                 </h2>
 
                 <p class="text-gray-700 leading-relaxed">
-                    By accessing and using this website, you agree to comply with
-                    these Terms and all applicable laws and regulations.
+                    Používaním tejto webovej stránky súhlasíte s týmito podmienkami a všetkými platnými zákonmi a predpismi.
                 </p>
             </section>
 
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    2. Website Purpose
+                    2. Účel webovej stránky
                 </h2>
 
                 <p class="text-gray-700 leading-relaxed">
-                    This website provides information about services, facilities,
-                    and activities related to Dom Služieb Stará Ľubovňa.
+                    Táto webová stránka poskytuje informácie o službách, zariadeniach a aktivitách súvisiacich s Domom služieb Stará Ľubovňa.
                 </p>
             </section>
 
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    3. Intellectual Property
+                    3. Duševné vlastníctvo
                 </h2>
 
                 <p class="text-gray-700 leading-relaxed">
-                    All content including text, graphics, logos, images,
-                    and design elements is protected by applicable intellectual
-                    property laws.
+                    Všetok obsah vrátane textov, grafiky, log, obrázkov a dizajnových prvkov je chránený platnými zákonmi o duševnom vlastníctve.
                 </p>
             </section>
 
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    4. User Responsibilities
+                    4. Povinnosti používateľa
                 </h2>
 
                 <ul class="space-y-2 text-gray-700">
-                    <li>• Use the website lawfully</li>
-                    <li>• Provide accurate information</li>
-                    <li>• Respect website security</li>
-                    <li>• Avoid disruptive activities</li>
+                    <li>• Používať webovú stránku v súlade so zákonom</li>
+                    <li>• Poskytovať presné informácie</li>
+                    <li>• Rešpektovať bezpečnosť stránky</li>
+                    <li>• Vyhýbať sa rušivým aktivitám</li>
                 </ul>
             </section>
 
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    5. Disclaimer
+                    5. Vylúčenie zodpovednosti
                 </h2>
 
                 <p class="text-gray-700 leading-relaxed">
-                    Information on this website is provided for general
-                    informational purposes only. We do not guarantee the
-                    completeness or accuracy of all content.
+                    Informácie na tejto webovej stránke sú poskytované iba na všeobecné informačné účely. Nezaručujeme úplnosť ani presnosť všetkého obsahu.
                 </p>
             </section>
 
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    6. Limitation of Liability
+                    6. Obmedzenie zodpovednosti
                 </h2>
 
                 <p class="text-gray-700 leading-relaxed">
-                    Dom Služieb Stará Ľubovňa shall not be liable for any damages
-                    resulting from the use of this website.
+                    Dom služieb Stará Ľubovňa nezodpovedá za žiadne škody vzniknuté používaním tejto webovej stránky.
                 </p>
             </section>
 
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    7. External Links
+                    7. Externé odkazy
                 </h2>
 
                 <p class="text-gray-700 leading-relaxed">
-                    We may provide links to third-party websites. We are not
-                    responsible for their content or privacy practices.
+                    Môžeme poskytovať odkazy na webové stránky tretích strán. Nenesieme zodpovednosť za ich obsah ani zásady ochrany súkromia.
                 </p>
             </section>
 
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    8. Modifications
+                    8. Zmeny
                 </h2>
 
                 <p class="text-gray-700 leading-relaxed">
-                    We reserve the right to update these Terms at any time.
-                    Changes become effective upon publication on this page.
+                    Vyhradzujeme si právo kedykoľvek aktualizovať tieto podmienky. Zmeny nadobúdajú účinnosť po zverejnení na tejto stránke.
                 </p>
             </section>
 
             <section>
                 <h2 class="mb-4 uppercase text-[15px] tracking-wide">
-                    9. Governing Law
+                    9. Rozhodné právo
                 </h2>
 
                 <p class="text-gray-700 leading-relaxed">
-                    These Terms are governed by the laws of the Slovak Republic.
+                    Tieto podmienky sa riadia právnymi predpismi Slovenskej republiky.
                 </p>
             </section>
         </div>
     </div>
 </div>
+
 <x-home-section.footer/>
 @endsection
