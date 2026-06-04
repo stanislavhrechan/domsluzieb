@@ -11,11 +11,9 @@
     <link rel="shortcut icon" href="{{asset('favicon/favicon.ico')}}" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('favicon/apple-touch-icon.png')}}" />
     <link rel="manifest" href="{{asset('favicon/site.webmanifest')}}" />
-
     
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('style/style.css') }}?v={{ filemtime(public_path('style/style.css')) }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>

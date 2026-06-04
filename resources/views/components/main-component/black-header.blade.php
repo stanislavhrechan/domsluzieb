@@ -12,7 +12,7 @@
     }"
     @scroll.window="scrolled = window.scrollY > 50"
     :class="scrolled ? 'bg-transparent' : 'bg-white h-18'"
-    class="fixed top-0 left-0 w-full z-[9999] transition-all duration-500"
+    class="fixed top-0 left-0 w-full z-30 transition-all duration-500"
 >
 
     <div class="absolute top-3 left-5 md:left-20 z-50">

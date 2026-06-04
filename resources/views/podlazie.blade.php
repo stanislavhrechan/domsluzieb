@@ -7,7 +7,7 @@
         bg-[size:40px_40px]">
     </div>
 
-    <div class="absolute bottom-0 left-0 right-0 z-20 px-6 py-4 flex justify-between items-center text-white">
+    <div class="absolute bottom-0 left-0 right-0 z-5 px-6 py-4 flex justify-between items-center text-white">
         <div class="hidden md:block text-sm uppercase tracking-widest text-black/60 font-[DMMono]">
             ARCHITEKTÚRNY POHĽAD
         </div>
@@ -23,8 +23,7 @@
             class="absolute inset-0 flex items-center justify-center overflow-hidden
             cursor-grab active:cursor-grabbing touch-none">
             <div id="floor-wrapper"
-                class="relative w-fit mx-auto transition-transform duration-300 ease-out">
-
+                class="relative w-fit mx-auto transition-transform duration-300 ease-out invisible">
                 @includeIf('components.floor-svg.' . $floorView)
             </div>
         </div>
@@ -68,7 +67,11 @@
 </div>
 
 <style>
-    
+#floor-wrapper {
+transition:
+    transform 300ms ease-out,
+    opacity 200ms ease;
+}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -136,6 +139,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // -------------------------
     // POINTER EVENTS
     // -------------------------
+
+    requestAnimationFrame(() => {
+       wrapper.classList.remove('invisible');
+    });
 
     viewport.addEventListener('pointerdown', (e) => {
 

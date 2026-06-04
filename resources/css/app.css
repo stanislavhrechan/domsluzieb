@@ -9,3 +9,41 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+:root {
+  --index: calc(1vw + 1vh);
+  --base-100: #fafafa;
+  --base-200: #e8e6e7;
+  --base-300: #d3d2d2;
+  --base-400: #0f0f0f;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+@font-face {
+  font-family: 'DMMono';
+  src: url(../../public/fonts/DMMono-Regular.woff2);
+}
+
+
+
+.zone.available:hover {
+  fill: #2ecc71;
+}
+
+.zone.occupied:hover {
+  fill: #801313;
+}
