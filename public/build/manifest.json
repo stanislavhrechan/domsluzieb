@@ -1,0 +1,24 @@
+{
+  "public/fonts/DMMono-Regular.woff2": {
+    "file": "assets/DMMono-Regular-D6DCEBki.woff2",
+    "src": "public/fonts/DMMono-Regular.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-RHLKahtq.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "assets": [
+      "assets/DMMono-Regular-D6DCEBki.woff2"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-jdS-pvz2.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
