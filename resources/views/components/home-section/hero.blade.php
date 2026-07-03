@@ -1,45 +1,53 @@
 @props(['buildings' => []])
 <section class="relative w-full min-h-screen overflow-hidden">
     <div class="absolute inset-0">
-        <svg id="heroDesktopA"  class="hero-svg active hidden md:block" preserveAspectRatio="xMidYMid slice" viewBox="0 150 1536 1524" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg id="heroDesktopA"  class="hero-svg active hidden md:block" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1552 1020" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
-            href="./images/bg_1.webp"
+            href="./images/bg_1_v3.png"
             class="animate-heroReveal"
             />
-            <path d="M617 431V308L1400.5 305.5V431H617Z" data-name="A" data-floor="C" data-area="8 miestnosti" data-status="free" data-url="/floor/1/3"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" data-url="" fill="#D9D9D9" fill-opacity="0.23"/>
-            <path d="M229 694.5V577.5H615H1401.5V607.5H1101.5V730H615V694.5H229Z"  data-name="A" data-floor="A" data-area="7 miestnosti" data-status="free" data-url="/floor/1/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d9d9d944" fill-opacity="0.23"/>
-            <path d="M1400 577H616.5H229V445.5L246 443.5V431H616.5H1400V577Z" data-name="A" data-floor="B" data-area="16 miestnosti" data-status="free" data-url="/floor/1/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d9d9d944" fill-opacity="0.23"/>
+            <path d="M746.797 452.698V320.753L1440.08 317.003L1437.39 452.698H746.797Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="C" data-area="8 kancelárskych priestorov" data-status="free" data-url="/floor/1/3"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
+            <path d="M129.534 668.785V565.588L650.062 571.289H1432.78V599.539L1182.97 602.732V701.283H744.974V672.657L129.534 668.785Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="A" data-area="7 kancelárskych priestorov" data-status="free" data-url="/floor/1/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
+            <path d="M1433.02 564.448H733.368H130.142V437.875L744.973 442.436V451.558L1435.21 453.577L1433.02 564.448Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="B" data-area="16 kancelárskych priestorov" data-status="free" data-url="/floor/1/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
         </svg>
 
-        <svg id="heroMobileA" class="hero-svg active block md:hidden  min-h-full" viewBox="0 0 1025 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <svg id="heroMobileA" class="hero-svg active block md:hidden  min-h-full" viewBox="0 0 998 1517" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
              <image 
-            href="./images/bg_mobile_1.webp"
+            href="./images/bg_1_mobile_v2.png"
             class="animate-heroReveal"
             />
-            <path d="M998 924H0V1019.13H321.5V1053H737.972V944.421H998V924Z" data-name="A" data-floor="A" data-area="7 miestnosti" data-status="free" data-url="/floor/1/1" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#d82b2b" fill-opacity="0.23"/>
-            <path d="M321 787H0V923H321.607L998 924V816.074H321V787Z" data-name="A" data-floor="B" data-area="16 miestnosti" data-status="free" data-url="/floor/1/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#09e92e" fill-opacity="0.23"/>
-            <path d="M321 815.5V678L998 676.5V815.5H321Z" data-name="A" data-floor="C" data-area="8 miestnosti" data-status="free" data-url="/floor/1/3"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#2c1d1d" fill-opacity="0.23"/>
+                <path d="M470 836V721.252L926 720V836H470Z" fill="#D9D9D9" fill-opacity="0.23" data-name="A" data-floor="C" data-area="8 kancelárskych priestorov" data-status="free" data-url="/floor/1/3"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
+                <path d="M926 931H96.5V1014H468V1036.5L754.5 1039V948.097H926V931Z" fill="#D9D9D9" fill-opacity="0.23" data-name="A" data-floor="A" data-area="7 kancelárskych priestorov" data-status="free" data-url="/floor/1/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
+                <path d="M468.487 815.5L95.5 809.5L97 931H467.5C646.951 931.396 925 930.5 925 930.5L926.402 836.498H468.074L468.487 815.5Z" fill="#D9D9D9" fill-opacity="0.23" data-name="A" data-floor="B" data-area="16 kancelárskych priestorov" data-status="free" data-url="/floor/1/2"   class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
+
         </svg>
 
 
-        <svg id="heroMobileB" class="hero-svg  block md:hidden min-h-full" viewBox="0 0 1024 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+        <svg id="heroMobileB" class="hero-svg  block md:hidden min-h-full"  viewBox="0 0 980 1536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
-            href="./images/bg_mobile_2.webp"
+            href="./images/bg_2_mobile_v1.png"
             class="animate-heroReveal object-center"
             loading="lazy"
             />
-            <path d="M1 915V889H13.0061L35.5176 819H209.106L240.622 790L269.137 817H835.426L958.489 844.5H981V869.5H968.994V915H1Z"  data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/2/2" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
+            <path data-name="B" data-floor="B" data-area="18 kancelárskych priestorov" data-status="free" data-url="/floor/2/2" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" d="M133.5 916.5L15 913L12.5 888.5L30.5 882L36 829L48.5 822.5V809.5L79.5 808.5L165.5 771.5L410 775.5C421.333 776 447.5 777.4 461.5 779C475.5 780.6 691.333 760.333 797.5 750L812.5 752.5C814.1 755.7 880.833 786.167 914 801C932.8 812.2 957.5 818.667 967.5 820.5L967 847H951L945 906H893.5C893.1 915.2 866.333 918.5 853 919C791.4 918.2 762.333 902.333 755.5 894.5C728.7 890.5 657 896.166 624.5 899.5V915C592.5 929.8 418.5 928.166 335.5 925.5L133.5 919.5V916.5Z" fill="#D9D9D9" fill-opacity="0.2" stroke="black"/>
         </svg>
 
 
-        <svg id="heroDesktopB" class="hero-svg hidden md:block" preserveAspectRatio="xMidYMid slice" viewBox="0 150 1536 1524" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <svg id="heroDesktopB" class="hero-svg hidden md:block" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1801 1013" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
-            href="./images/bg_2.webp"
+            href="./images/bg_2_v1.png"
             class="animate-heroReveal"
             loading="lazy"
             />
-            <path data-name="B" data-floor="B" data-area="8 apartmánov" data-status="free" data-url="/floor/2/2"  d="M1504 537.5H18.5V499.5H34.5L60 408H242.5L336.5 403L389.5 356.5L432 397H1294L1489 432.5H1523V471.5H1504V537.5Z" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" fill="#D9D9D9" fill-opacity="0.23"/>
+            <path data-name="B" data-floor="B" data-area="18 kancelárskych priestorov" data-status="free" data-url="/floor/2/2" class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer" d="M47.5 461L40.5 427L69 417L75.5 343.5L311.5 268.5L499.5 272L719.5 276L877.5 284L1014.5 273L1430.5 245.5L1639.5 322.5L1706.5 338L1700.5 374.5H1674L1659.5 458H1582.5C1558.9 470 1527.67 473.333 1515 473.5C1418.2 470.3 1370.67 450.5 1359 441C1295.4 436.6 1170.83 444.833 1116.5 449.5V469C976.5 483.8 807.167 485.167 740 484L573.5 480V477L568.5 480L225.5 469.5L224.5 467L47.5 461Z" fill="#D9D9D9" fill-opacity="0.2"/>
         </svg>
+
+      
+
 
        <div id="apartment-panel"
             class="absolute md:fixed z-[9999]

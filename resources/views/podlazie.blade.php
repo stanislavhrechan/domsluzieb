@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         occupied: {
-            text: "Predaný",
+            text: "Obsadený",
             class: "text-red-400"
         },
 
