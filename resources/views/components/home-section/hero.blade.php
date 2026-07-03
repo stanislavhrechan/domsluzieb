@@ -3,13 +3,15 @@
     <div class="absolute inset-0">
         <svg id="heroDesktopA"  class="hero-svg active hidden md:block" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1552 1020" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <image 
-            href="./images/bg_1_v3.png"
+            href="./images/bg_1_v4.png"
             class="animate-heroReveal"
             />
-            <path d="M746.797 452.698V320.753L1440.08 317.003L1437.39 452.698H746.797Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="C" data-area="8 kancelárskych priestorov" data-status="free" data-url="/floor/1/3"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
-            <path d="M129.534 668.785V565.588L650.062 571.289H1432.78V599.539L1182.97 602.732V701.283H744.974V672.657L129.534 668.785Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="A" data-area="7 kancelárskych priestorov" data-status="free" data-url="/floor/1/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
-            <path d="M1433.02 564.448H733.368H130.142V437.875L744.973 442.436V451.558L1435.21 453.577L1433.02 564.448Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="B" data-area="16 kancelárskych priestorov" data-status="free" data-url="/floor/1/2"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
+            <path d="M1090 648H714V622.5L200 618.5V525.5H710.5H1309.5V550.5H1090V648Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="A" data-area="7 kancelárskych priestorov" data-status="free" data-url="/floor/1/1"  class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
+            <path d="M1310.5 524V431.5H713.5V396.5H200V524H713.5H1310.5Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="B" data-area="16 kancelárskych priestorov" data-status="free" data-url="/floor/1/2"    class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
+            <path d="M1315.5 291H712L713.5 430H1312L1315.5 291Z" fill="#D9D9D9" fill-opacity="0.2" data-name="A" data-floor="C" data-area="8 kancelárskych priestorov" data-status="free" data-url="/floor/1/3"   class="hero-zone fill-white/20 hover:fill-green-500/40 transition-all duration-300 cursor-pointer"/>
         </svg>
+
+
 
 
         <svg id="heroMobileA" class="hero-svg active block md:hidden  min-h-full" viewBox="0 0 998 1517" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
